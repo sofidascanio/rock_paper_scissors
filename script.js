@@ -37,15 +37,15 @@ function estadoDeJuego (){
     if (ronda >= 5) {
         if ((jugador !== 3) && (computadora !== 3)) {
             if (jugador === computadora) {
-                imprimirGanador('empate');
-                terminarJuego('empate');
+                imprimirGanador('Empate');
+                terminarJuego('Empate');
             }
             if (jugador > computadora) {
-                imprimirGanador('Gano jugador');
-                terminarJuego('Gano jugador');
+                imprimirGanador('Gano Jugador');
+                terminarJuego('Gano Jugador');
             } else {
-                terminarJuego('Gano computadora');
-                terminarJuego('Gano computadora');
+                terminarJuego('Gano Computadora');
+                terminarJuego('Gano Computadora');
             }
         }
         jugador = 0;
@@ -60,16 +60,16 @@ function chequearGanadorJuego (){
     console.log("Puntuación de Computadora: ", computadora);
     console.log("Puntuación de Jugador: ", jugador);
     if (jugador === 3) {
-        console.log("Gano: jugador");
-        imprimirGanador('Gano jugador');
-        terminarJuego('Gano jugador');
+        console.log("Gano: Jugador");
+        imprimirGanador('Gano Jugador');
+        terminarJuego('Gano Jugador');
         return 'jugador';
         
     }
     if (computadora === 3) {
         console.log("Gano: Computadora");
-        terminarJuego('Gano computadora');
-        terminarJuego('Gano computadora');
+        terminarJuego('Gano Computadora');
+        terminarJuego('Gano Computadora');
         return 'computadora';
     }
 }
@@ -96,10 +96,13 @@ function jugar(opcionJugador) {
 }
 
 function imprimir(ronda,jug,compu,gano){
+    jug= jug[0].toUpperCase() + jug.substring(1);
+    compu = compu[0].toUpperCase() + compu.substring(1);
+    gano = gano[0].toUpperCase() + gano.substring(1);
     var juego = document.getElementById("juego");
     juego.innerHTML = `<p> Ronda numero: ${ronda} </p> <br> 
-                        <p> Eleccion de computadora: ${compu} Puntuación: ${computadora} </p> <br> 
-                        <p> Eleccion de jugador: ${jug} Puntuación: ${jugador} </p> <br> 
+                        <p> Computadora: ${compu}. Puntuación: ${computadora} </p> <br> 
+                        <p> Jugador: ${jug}. Puntuación: ${jugador} </p> <br> 
                         <p> Gano: ${gano} </p>` ;
 }
 
