@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(33, 32, 66);
+}
+
+h1 {
+    text-align: center;
+    color:wheat;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#titulo {
+    font-size: 32px;
+}
+
+#subtitulo {
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background-color: rgb(33, 32, 66);
+}
+
+
+img {
+    margin:10px;
+    padding:10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(33, 32, 66);
+}
+
+#opciones {
+    background-color: rgb(33, 32, 66);
+    display:flex;
+    justify-content: center;
+}
+
+#opciones-nombres {
+    background-color: rgb(33, 32, 66);
+    display:flex;
+    justify-content: center;
+    color: wheat;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.nombre {
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+
+}
+
+#container-juego {
+    height: 250px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#container-resultado {
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#juego {
+    color:wheat;
+}
+
+#resultado {
+    color:wheat;
+}
+
+#p-juego {
+    color:aqua;
+}
